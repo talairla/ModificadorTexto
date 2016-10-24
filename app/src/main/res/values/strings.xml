@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Formato Texto</string>
+    <string name="rb20pt">20 pt</string>
+    <string name="rb22pt">22 pt</string>
+    <string name="rb24pt">24 pt</string>
+    <string name="rb26pt">26 pt</string>
+    <string name="rb28pt">28 pt</string>
+    <string name="rb30pt">30 pt</string>
+    <string name="txtMuestra">Escribe un texto...</string>
+    <string name="lblSize">Tamaño de Fuente:</string>
+    <string name="chbBold">Negrita</string>
+    <string name="chbItalics">Cursiva</string>
+    <string name="chbUnderlined">Subrayado</string>
+    <string name="lblCrossedOut">Tachado</string>
+    <string name="lblEffects">Efectos de Fuente</string>
+
+</resources>

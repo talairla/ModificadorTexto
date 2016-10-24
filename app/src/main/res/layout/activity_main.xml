@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.teo.radiobutton.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtMuestra"
+        android:hint="@string/txtMuestra" />
+
+    <TextView
+        android:text="@string/lblSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rgSize"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lblSize" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgSize"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="@string/rb20pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize20"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="@string/rb22pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize22"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="@string/rb24pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize24"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="@string/rb26pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize26"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="@string/rb28pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize28"
+            android:layout_weight="1" />
+        <RadioButton
+            android:text="@string/rb30pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbsize30"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="@string/lblEffects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblEffects"
+        android:layout_alignBaseline="@id/lblSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <CheckBox
+        android:text="@string/chbBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSize"
+        android:layout_alignStart="@id/lblEffects"
+        android:layout_alignLeft="@id/lblEffects"
+        android:id="@+id/chbBold"/>
+    <!--Para versión <= 17.0 layout_alignLeft equivale a layout_alignEnd-->
+    <CheckBox
+        android:text="@string/chbItalics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chbBold"
+        android:layout_alignStart="@id/lblEffects"
+        android:layout_alignLeft="@id/lblEffects"
+        android:id="@+id/chbItalics" />
+    <CheckBox
+        android:text="@string/chbUnderlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chbItalics"
+        android:layout_alignStart="@id/lblEffects"
+        android:layout_alignLeft="@id/lblEffects"
+        android:id="@+id/chbUnderlined" />
+    <CheckBox
+        android:text="@string/lblCrossedOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chbUnderlined"
+        android:layout_alignStart="@id/lblEffects"
+        android:layout_alignLeft="@id/lblEffects"
+        android:id="@+id/chbCrossedOut" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spinner" />
+
+
+</RelativeLayout>
